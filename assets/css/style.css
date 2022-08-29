@@ -20,13 +20,19 @@ html {
     margin-right: -8px;
 }
 
+.row::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
 .column {
     float: left;
     padding-left: 8px;
     padding-right: 8px;
 }
 
-#two-col {
+.two-col {
     width: 50%;
 }
 
@@ -34,8 +40,20 @@ html {
     width: 33.33333%;
 }
 
+.full-col {
+    width: 100%;
+}
+
 .text-center {
     text-align: center !important;
+}
+
+.mt-top8 {
+    margin-top: 8px;
+}
+
+.mt-top16 {
+    margin-top: 16px;
 }
 
 #wrapper {
@@ -277,6 +295,38 @@ html {
 .places-body .selection-buy:hover {
     background-color: #ccc;
     color: #000;
+}
+
+.contact-content {
+    margin-top: 48px;
+}
+
+.contact-info {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.contact-info i[class*="ti-"] {
+    width: 30px;
+    display: inline-block;
+}
+
+.contact-form {
+    font-size: 15px;
+}
+
+.contact-form .form-control {
+    padding: 12px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+.contact-form .form-submit-btn {
+    background-color: #000;
+    color: #fff;
+    border: 1px solid #000;
+    float: right;
+    padding: 10px 16px;
 }
 
 #footer {
